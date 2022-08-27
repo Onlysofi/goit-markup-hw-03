@@ -4,7 +4,8 @@
     --secondary-text-color: #757575;
     --accent-color: #2196F3;
     --black-color: #000000;
-    --wcolor: #ECECEC;
+    --bordercolor: #ECECEC;
+    --secondary-borderbox: #EEEEEE;
     --text-footer-color: rgba(255, 255, 255, 0.6);
     --address-text-color: #FFFFFF;
 
@@ -55,6 +56,10 @@ ul{
     padding: 0 15px;
     margin: 0 auto;
 }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 body {
     background-color: var(--main-backgraund-color);
@@ -74,6 +79,9 @@ body {
 } */
 
 /* шапка */
+.header {
+    border-bottom: 1px solid var(--bordercolor);
+}
 .main-nav {
     display: flex;
     align-items: center;
@@ -150,8 +158,8 @@ body {
 }
 
 .hero .container {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 106px;
+    padding-bottom: 106px;
 }
 .hero .hero-title {
     font-weight: 900;
@@ -191,7 +199,7 @@ body {
     display: flex;
     list-style: none;
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 0;
 }
 
 .feature-list li {
@@ -228,14 +236,15 @@ body {
     display: flex;
     list-style: none;
     gap: 30px;
-    padding-bottom: 94px;
+}
+
+.subject-list-item img {
+    display: block;
 }
 
 /* Команда */
 .team {
     background-color: var(--team-backgraund-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .team-title {
@@ -287,22 +296,20 @@ body {
 footer {
     background-color: var(--secondary-background-color);
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
 }
 .address-list {
     list-style: none;
     margin-top: 20px;
 }
 .address {
-    display: block;
     font-style: normal;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
     color:var(--address-text-color);
     text-decoration: none;
 }
 address .contact {
-    display: block;
     font-style: normal;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -315,19 +322,27 @@ address .contact:hover{
 .address-list li:not(:last-child) {
     margin-bottom: 9px;
 }
+
 /* портфоліо */
+
 .button-list {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
 }
 .filter-button {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.625;
+    line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
     background: var(--team-backgraund-color);
-    border-color:transparent;
+    border: 0;
     cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
+    margin-bottom: 50px;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -336,17 +351,36 @@ address .contact:hover{
     border-color: transparent;
 }
 .projects {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
+    gap: 30px;
 }
+
+.projects-item {
+    width: calc((100% - 60px) /3);
+}
+
 .projects-item-name{
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    padding-left: 23px;
+    
 }
 .projects-item-type{
     font-size: 16px;
     line-height: 1.875;
     color: var(--secondary-text-color);
+    padding-left: 24px;
+    
+}
+.border {
+    border-left: 1px solid var(--secondary-borderbox);
+        border-right: 1px solid var(--secondary-borderbox);
+        border-bottom: 1px solid var(--secondary-borderbox);
 }
 .projects-link {
     text-decoration: none;

@@ -11,36 +11,44 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!--normalize-->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <!--styles-->
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <!--шапка сайта-->
     <body>
     <!--шапка сайта-->
-    <header>
-      <nav>
-        <a href="./index.html" class="logo">
-          <span class="web">Web</span><span class="studio">Studio</span></a
-        >
-        <ul class="navigation">
-          <li><a href="./index.html" class="nav-item">Студія</a></li>
-          <li><a href="./portfolio.html" class="nav-item current">Портфоліо</a></li>
-          <li><a href="" class="nav-item">Контакти</a></li>
-        </ul>
-      </nav>
-      <ul class="contacts">
-        <li><a href="mailto:info@devstudio.com" class="contacts-item">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="contacts-item">+38 096 111 11 11</a></li>
-      </ul>
+     <header>
+      <div class="container">
+        <nav class="main-nav">
+          <a href="./index.html" class="logo">
+            <span class="web">Web</span><span class="studio">Studio</span></a
+          >
+          <ul class="navigation">
+            <li class="item"><a href="./index.html" class="nav-item current">Студія</a></li>
+            <li class="item"><a href="./portfolio.html" class="nav-item">Портфоліо</a></li>
+            <li class="item"><a href="" class="nav-item">Контакти</a></li>
+          </ul>
+          <ul class="contacts">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="contacts-item">info@devstudio.com</a>
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="contacts-item">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <!--Фільтри-->
       <section>
-        <h1 hidden>Фільтр Портфоліо</h1>
+        <h1 class="visually-hidden">Фільтр Портфоліо</h1>
         <ul class="button-list">
           <li><button type="button" class="filter-button current">Усі</button></li>
           <li><button type="button" class="filter-button">Веб-сайти</button></li>

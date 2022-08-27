@@ -157,7 +157,10 @@ body {
     color: var(--accent-color)
 }
 
-.hero .container {
+.container.hero {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
     padding-top: 106px;
     padding-bottom: 106px;
 }
@@ -177,8 +180,6 @@ body {
 
 .hero-button {
     padding: 10px 32px;
-    margin: 0 auto;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -365,9 +366,9 @@ address .contact:hover{
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: 20px;
-    margin-bottom: 4px;
+    padding-top: 20px;
     padding-left: 23px;
+    margin-bottom: 4px;
     
 }
 .projects-item-type{
@@ -375,7 +376,8 @@ address .contact:hover{
     line-height: 1.875;
     color: var(--secondary-text-color);
     padding-left: 24px;
-    
+    margin-bottom: 0;
+    padding-bottom: 19px;
 }
 .border {
     border-left: 1px solid var(--secondary-borderbox);
@@ -385,4 +387,8 @@ address .contact:hover{
 .projects-link {
     text-decoration: none;
     color: inherit;
+}
+
+.projects-link img {
+    display: block;
 }

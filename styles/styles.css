@@ -82,6 +82,10 @@ body {
 .header {
     border-bottom: 1px solid var(--bordercolor);
 }
+.container.nav {
+    display: flex;
+    align-items: center;
+}
 .main-nav {
     display: flex;
     align-items: center;
@@ -130,9 +134,16 @@ body {
 .contacts {
     display: flex;
     list-style: none;
+    align-items: center;
     justify-content: flex-end;
     margin-left: auto;
 }
+
+/* .contacts .contacts-item {
+    display: block;
+    align-content: center;
+} */
+
 .contacts .item+.item {
     margin-left: 50px;
 }
@@ -157,12 +168,11 @@ body {
     color: var(--accent-color)
 }
 
-.container.hero {
-    display: flex;
-    flex-direction: column ;
+.hero {
+    text-align: center;
     align-items: center;
-    padding-top: 106px;
-    padding-bottom: 106px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero .hero-title {
     font-weight: 900;
@@ -196,11 +206,13 @@ body {
 }
 
 /* Переваги */
+.about-working {
+padding-top: 94px;
+padding-bottom: 0;
+}
 .feature-list {
     display: flex;
     list-style: none;
-    padding-top: 94px;
-    padding-bottom: 0;
 }
 
 .feature-list li {
@@ -269,7 +281,6 @@ body {
 
 .team-photo {
     display: block;
-    margin-bottom: 30px;
 }
 
 .team-item-name {
@@ -278,6 +289,7 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
+    padding-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -294,14 +306,18 @@ body {
     color: var(--main-backgraund-color);
     letter-spacing: 0.03em;
 }
-footer {
+.footer {
     background-color: var(--secondary-background-color);
     padding-top: 60px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
+}
+.footer .logo {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 20px;
 }
 .address-list {
     list-style: none;
-    margin-top: 20px;
 }
 .address {
     font-style: normal;
@@ -331,6 +347,7 @@ address .contact:hover{
     display: flex;
     justify-content: center;
     gap: 8px;
+    margin-bottom: 50px;
 }
 .filter-button {
     font-weight: 500;
@@ -343,7 +360,6 @@ address .contact:hover{
     cursor: pointer;
     border-radius: 4px;
     padding: 6px 22px;
-    margin-bottom: 50px;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -366,8 +382,6 @@ address .contact:hover{
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    padding-top: 20px;
-    padding-left: 23px;
     margin-bottom: 4px;
     
 }
@@ -375,14 +389,16 @@ address .contact:hover{
     font-size: 16px;
     line-height: 1.875;
     color: var(--secondary-text-color);
-    padding-left: 24px;
     margin-bottom: 0;
-    padding-bottom: 19px;
 }
 .border {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 19px;
     border-left: 1px solid var(--secondary-borderbox);
-        border-right: 1px solid var(--secondary-borderbox);
-        border-bottom: 1px solid var(--secondary-borderbox);
+    border-right: 1px solid var(--secondary-borderbox);
+    border-bottom: 1px solid var(--secondary-borderbox);
 }
 .projects-link {
     text-decoration: none;

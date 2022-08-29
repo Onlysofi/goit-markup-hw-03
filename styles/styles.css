@@ -124,6 +124,7 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    background-clip: ;
 }
 .navigation .nav-item {
     display: block;
